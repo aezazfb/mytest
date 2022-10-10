@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
 
         SizedBox(height:50),
 
-        Obx(() => Text('pico adc(4) value: ${c.temperature}',
+        Obx(() => Text('Your HB value is: ${c.temperature}',
             style:myStyle)),
 
     SizedBox(height:50),
@@ -40,7 +40,9 @@ class MyHomePage extends StatelessWidget {
     ? ElevatedButton(onPressed: c.connect,
     child: Text('connect',
     style:myStyle))
-        : null))]));}}
+        : null)),
+        Center(child:
+        Container(child:Text("Tech4Life Enterprises") ,),)]));}}
 
 //////////////////// filename: blecontroller.dart
 // ble no scan get nrf connect in google play store to get ble id
